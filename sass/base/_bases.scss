@@ -1,0 +1,90 @@
+
+body {
+  min-width: 340px;
+  max-width: 768px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+.section_page {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 50px 0px;
+  &#section_fontionnement {
+    background-color: #ffffff;
+    padding: 50px 0px 40px 0px;
+  }
+  &#section_restaurants {
+    background-color: #f4f4f4;
+    padding: 50px 0px 40px 0px;
+  }
+}
+
+/*----------------------------------------Section 1 étapes-----------------------------------*/
+.home-page__title {
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 40px 40px 15px 40px;
+    line-height: 27px;
+  }
+  .slogan {
+    color: #000000c0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 30px;
+  }
+
+h2 {display:inline-flex;
+&.section__title {
+  
+  padding-left: 20px;
+  font-size: 25px;
+  font-weight: 900;
+}
+&.dish__title{
+  font-weight: bolder;
+
+}
+}
+
+.photo_restaurant {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.restaurant {
+  font-size: 18px;
+  font-weight: 700;
+}
+.ville_restaurant {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*------h3 ---Footer--------------*/
+
+h3 {
+  display: flex;
+  font-size: 16px;
+  width: 60%;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 20px 0px 40px 20px;
+}

@@ -1,0 +1,30 @@
+
+$primarycolor: #9356dc;
+$secondarycolor: #ff79da;
+$tierciarycolor: #99e2d0;
+$softbackground: #f4f4f4;
+$ombre: #b1b1b1;
+
+
+
+
+.button#search, .button#command {
+  display: flex;
+  width: 220px;
+  height:50px;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  border: none;
+  user-select: none;
+  color: white;
+  justify-content: center;
+  align-items:center;
+  background: linear-gradient($secondarycolor, $primarycolor);
+  border-radius: 25px;
+  box-shadow: 2px 3px 8px 0px #b1b1b1;
+  &:active {
+    opacity: 50%;
+    box-shadow: 1px 2px 5px 0px #666666;
+  }
+}

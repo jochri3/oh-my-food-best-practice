@@ -1,0 +1,31 @@
+
+.menu_footer {
+  line-height: 30px;
+  list-style: none;
+  color: white;
+}
+
+.lienfooter {
+  text-decoration: none;
+  color: white;
+   &:hover{color: #9356dc;
+  }
+}
+
+.liencards {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+ 
+  
+}
+
+.fa-utensils {
+  padding-right: 10px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.fa-handshake-angle {
+  padding-right: 10px;
+  font-weight: lighter;
+  font-size: 10px;
+}

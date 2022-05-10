@@ -1,0 +1,279 @@
+$primarycolor: #9356dc;
+$secondarycolor: #ff79da;
+$tierciarycolor: #99e2d0;
+$softbackground: #f4f4f4;
+$ombre: #b1b1b1;
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+.header__nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+
+  .logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.header__nav2 {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  .fleche-nav {
+    justify-content: left;
+    width: 33%;
+    padding-left: 20px;
+    margin-left: 0px;
+
+    .fa-arrow-left {
+      font-weight: bolder;
+      font-size: 16px;
+    }
+  }
+  .logo {
+    display: flex;
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    width: 33%;
+  }
+
+  .space-nav-right {
+    width: 33%;
+  }
+}
+
+.fleche-nav {
+  width: 100%;
+  margin-left: 10%;
+
+  .fa-arrow-left {
+    font-weight: bolder;
+    font-size: 16px;
+  }
+}
+/* ------------------------Zone de recherche par ville ---------------------*/
+.header__search-bloc {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  align-items: center;
+  background-color: $softbackground;
+}
+
+.header__search__form {
+  display: flex;
+  align-items: center;
+  color: #000000c0;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  background-color: #e7e7e7;
+  box-shadow: 0px 3px 5px #cccccc inset;
+}
+#input_city {
+  width: 160px;
+  background-color: #e7e7e7;
+  border-style: none;
+  padding-top: 7px;
+  padding-left: 10px;
+
+  &::placeholder {
+    color: #000000c0;
+    font-weight: 600;
+    font-size: medium;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+}
+
+/* -------------ACCUEIL Zone de Titres /slogan Page ---------------------*/
+.text_zone_header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*--------- PAGE 1 mise en page de la carte du restaurant ---------*/
+
+.header__picture {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+}
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  width: 100%;
+  height: fit-content;
+  border-radius: 30px 30px 0px 0px;
+  background-color: $softbackground;
+}
+
+.restaurant-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 0px 0px;
+
+  .title-restaurant {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+}
+
+/*--------- mise en page des plats (card) ---------*/
+
+.menu-step {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.menu-step-title {
+  font-size: 14px;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+/*-------ANIMATION ET contenu des cards "plat"---------*/
+
+.dish__card {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: start;
+  height: 72px;
+  min-width: 88%;
+  box-shadow: 0px 3px 20px #cccccc;
+  margin: 0px 8px 25px 10px;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: #9256dc36;
+     .fa-circle-check {
+      z-index: 10;
+      transform: rotate(360deg);
+      transition: transform 400ms ease-in-out;
+    }
+     .slider__zone {
+      width: 20%;
+      transition : 400ms; 
+    }
+  }
+}
+
+
+.description {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+ }
+
+.dish__text-zone {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  padding-left: 10px;
+  
+    .dish__title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .accompagnement {
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: 400;
+      text-overflow: ellipsis;
+    }
+}
+.price__zone {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding-top: 18px;
+}
+
+.slider__zone {
+  display: flex;
+  width: 0%;
+  height: 100%;
+  place-content: center;
+  align-items: center;
+  color: white;
+  background-color: $tierciarycolor;
+  border-radius: 0px 20px 20px 0px;
+     
+}
+  
+
+
+.fa-circle-check {
+  
+  z-index: -1;
+  display: flex;
+  transform: rotate(0deg);
+  transition: transform 600ms ease-in-out;
+  font-size: larger;
+}
+
+
+.dish__card:nth-child(1){
+  animation:slidesUp;
+  animation-duration:1s;
+  animation-delay:1.1s;
+  
+}
+
+.dish__card:nth-child(2){
+  animation:slidesUp;
+  animation-duration:1s;
+  animation-delay:1.2s;
+}
+.dish__card:nth-child(3){
+  animation:slidesUp;
+  animation-duration:1s;
+  animation-delay:1.3s;
+}
+.dish__card:nth-child(4){
+  animation:slidesUp;
+  animation-duration:1s;
+  animation-delay:1.4s;
+}
+@keyframes slidesUp{
+  0%{opacity:0;position:relative;top:30px; 
+}
+  100%{opacity:1;position:relative;top:0}
+}

@@ -1,0 +1,31 @@
+/*----------- variables de couleurs-------*/
+
+$primarycolor: #9356dc;
+$secondarycolor: #ff79da;
+$tierciarycolor: #99e2d0;
+$softbackground: #f4f4f4;
+$ombre: #b1b1b1;
+/*----------- apparence du coeur "favoris"-------*/
+.fa-heart {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  -webkit-text-stroke: 1.5px black;
+  /*----------- effet de remplissage au survol-------*/
+  &.fa-heart:hover {
+    cursor: pointer;
+    opacity: 100%;
+    -webkit-text-stroke: 0.2px rgb(255, 230, 234);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      to left top,
+      $primarycolor,
+      $secondarycolor
+    );
+    transition: color 0.5s ease-in-out;
+  }
+}
